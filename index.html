@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory Game</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Memory Game">
+        <meta name="keywords" content="Memory,Game,JavaScript">
+        <meta name="author" content="Priyanka Awatramani">
+        <link rel="stylesheet" href="Plugins/animate.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <!--HEADER-->
+        <header class="header-grid" id="header">
+            <div class="h-item"><button id="new">New Game</button></div>
+            <div class="h-item" >moves <span id="moves">0</span></div>
+            <div class="h-item">score <span id="score">200</span></div>
+            <div class="h-item" >time 0:<span id="timer">60</span> </div>
+        </header>
+        <!--/HEADER-->
+        <!--MAIN CONTAINER-->
+        <p class="wow pulse infinite" id="tap">Tap to play!</p>
+        <div class="grid" id="cards">
+            <div class="block" id="block1"></div>
+            <div class="block" id="block2"></div>
+            <div class="block" id="block3"></div>
+            <div class="block" id="block4"></div>
+            <div class="block" id="block5"></div>
+            <div class="block" id="block6"></div>
+            <div class="block" id="block7"></div>
+            <div class="block" id="block8"></div>
+            <div class="block" id="block9"></div>
+            <div class="block" id="block10"></div>
+            <div class="block" id="block11"></div>
+            <div class="block" id="block12"></div>
+            <div class="block" id="block13"></div>
+            <div class="block" id="block14"></div>
+            <div class="block" id="block15"></div>
+            <div class="block" id="block16"></div>
+        </div>
+        <!--/MAIN CONTAINER-->
+        <!-- DIV FOR WINNING -->
+        <div id="won">
+            <h2>You Won! Well done!</h2>
+            <p>You took <span id="movesAfterWinning"></span> moves</p>
+            <p>with <span id="timeRemaining"></span> seconds remaining</p>
+            <p>Your score: <span id="scoreAfterWinning"></span></p>
+            <button id="playagain">Play again!</button>
+            <button id="cancel">Cancel</button>
+        </div>
+        <!--/DIV FOR WINNING -->
+        <!-- DIV FOR TIMEOUT -->
+        <div id="timeout">
+            <h2>Oops! You ran out of time!</h2>
+            <p>You took <span id="movesAfterTimeout"></span> moves</p>
+            <p>in <span>60</span> seconds</p>
+            <p>Your score: <span id="scoreAfterTimeout"></span></p>
+            <button id="tryagain">Try again!</button>
+            <button id="cancelForTimeout">Cancel</button>
+        </div>
+        <!--/DIV FOR TIMEOUT -->
+        <script src="script.js"></script>
+        <script src="vendors/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+</html>
