@@ -211,7 +211,7 @@ header{
         width: 90px;
         height: 110px;
     }
-    .header{
+    header{
         max-width:250px;
     }
 }
