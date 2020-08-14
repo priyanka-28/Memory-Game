@@ -42,6 +42,7 @@ header{
     position: absolute;
     left: 500px;
     top: 270px;
+    /*margin: 0 auto;*/
 /*    color: #328984;*/
     color: #2A324B;
     font-weight: 600;
@@ -71,7 +72,7 @@ header{
 #won{
     width: 500px;
     height: 300px;
-/*    margin: 0 auto;*/
+    /*margin: 0 auto;*/
     border: 1px solid #000;
     z-index: 10000;
     background:  #2A324B;
@@ -147,3 +148,67 @@ header{
     cursor: pointer;
 }
 /*/TIMEOUT DIV*/
+
+@media (min-width: 1024px) and (max-width: 1354px) {
+    #tap{
+        position: absolute;
+        top: 270px;
+        left:34%;
+        /*left:250px;*/
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(4,auto);*/
+    /*grid-gap: 10px;*/
+    
+    }
+    #tap{
+        position: absolute;
+        top: 270px;
+        left:30%;
+        /*left:250px;*/
+    }
+
+
+}
+
+@media (min-width: 551px) and (max-width: 767px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        grid-gap: 10px;
+        max-width: 420px;
+        margin: 20px auto 0;
+        position: relative;
+    z-index: 0;
+    }
+    #tap{
+        position: absolute;
+        top: 270px;
+        left:25%;
+        /*left:250px;*/
+    }
+}
+@media (min-width: 220px) and (max-width: 550px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        grid-gap: 10px;
+        max-width: 250px;
+        margin: 20px auto 0;
+        position: relative;
+    z-index: 0;
+    }
+    #tap{
+        position: absolute;
+        top: 270px;
+        left:25%;
+    }
+    .block {
+        width: 90px;
+        height: 110px;
+    }
+}
